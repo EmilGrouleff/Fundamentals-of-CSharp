@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Chapter_2</RootNamespace>
+    <StartupObject>Chapter_2.Exercise_4</StartupObject>
+  </PropertyGroup>
+
+</Project>
