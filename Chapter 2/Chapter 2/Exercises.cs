@@ -13,11 +13,12 @@ namespace Chapter_2
 
         }
     }
+
     class Exercises_13
     {
         /*
-
-
+        Declare two variables of type int. Assign to them values 5 and 10
+        respectively. Exchange (swap) their values and print them.
         */
         static void Main()
         {
@@ -28,8 +29,12 @@ namespace Chapter_2
     class Exercises_12
     {
         /*
-
-
+        A company dealing with marketing wants to keep a data record of its
+        employees. Each record should have the following characteristic – first
+        name, last name, age, gender (‘m’ or ‘f’) and unique employee number
+        (27560000 to 27569999). Declare appropriate variables needed to
+        maintain the information for an employee by using the appropriate data
+        types and attribute names.
         */
         static void Main()
         {
@@ -40,8 +45,8 @@ namespace Chapter_2
     class Exercises_11
     {
         /*
-
-
+        Write a program that prints on the console isosceles triangle which
+        sides consist of the copyright character "©".
         */
         static void Main()
         {
@@ -52,11 +57,15 @@ namespace Chapter_2
     class Exercises_10
     {
         /*
-
-
+        Write a program to print a figure in the shape of a heart by the sign "o".
         */
         static void Main()
         {
+            Console.WriteLine("  o   o");
+            Console.WriteLine(" o  o  o");
+            Console.WriteLine("o       o");
+            Console.WriteLine("o       o");
+            Console.WriteLine("  o   o");
 
         }
     }
@@ -64,11 +73,17 @@ namespace Chapter_2
     class Exercises_9
     {
         /*
-
-
+        Declare two variables of type string and assign them a value “The
+        "use" of quotations causes difficulties.” (without the outer quotes).
+        In one of the variables use quoted string and in the other do not use it.
         */
         static void Main()
         {
+            string str1 = @"The use of quotations causes difficulties.";
+            string str2 = "The \"use\" of quotations causes difficulties.";
+
+            Console.WriteLine(str1);
+            Console.WriteLine(str2);
 
         }
     }
@@ -76,11 +91,26 @@ namespace Chapter_2
     class Exercise_8
     {
         /*
-
+        Declare two variables of type string and give them values "Hello" and
+        "World". Assign the value obtained by the concatenation of the two
+        variables of type string (do not miss the space in the middle) to a
+        variable of type object. Declare a third variable of type string and
+        initialize it with the value of the variable of type object (you should use
+        type casting).
 
         */
         static void Main()
         {
+            string helloString = "Hello";
+            string worldString = "World";
+
+            object container;
+
+            container = helloString + " " + worldString;
+
+            string str = (string)container;
+
+            Console.WriteLine(container);
 
         }
     }
