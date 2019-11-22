@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Chapter_2
 {
@@ -38,7 +42,35 @@ namespace Chapter_2
         */
         static void Main()
         {
+            string fullName;
+            string gender = "";
+            string f = "f";
+            string m = "m";
 
+            int employeeNumber;
+
+
+
+            Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("What is your last name?");
+            string lastName = Console.ReadLine();
+            fullName = firstName + " " + lastName;
+
+            /* Doesn't work..... figure out why...
+            Console.WriteLine("Are you Male or Female? m/f");
+            while (gender != "f" || gender != "m")
+            {
+                Console.WriteLine("That's not a gender");
+                gender = Console.ReadLine();
+            }
+            */
+
+            //isn't done!
+            Console.WriteLine("What is your employee number");
+            employeeNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(fullName + gender + employeeNumber);
         }
     }
 
