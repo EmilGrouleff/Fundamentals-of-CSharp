@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>Chapter_2</RootNamespace>
-    <StartupObject>Chapter_2.Exercises_10</StartupObject>
+    <StartupObject>Chapter_2.Exercises_12</StartupObject>
   </PropertyGroup>
 
 </Project>
