@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emil-laptop\\source\\repos\\Chapter 2\\Chapter 2\\Chapter 2.csproj": {}
+    "C:\\Users\\Emil-laptop\\source\\repos\\Fundamentals-of-CSharp\\Chapter 2\\Chapter 2\\Chapter 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emil-laptop\\source\\repos\\Chapter 2\\Chapter 2\\Chapter 2.csproj": {
+    "C:\\Users\\Emil-laptop\\source\\repos\\Fundamentals-of-CSharp\\Chapter 2\\Chapter 2\\Chapter 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emil-laptop\\source\\repos\\Chapter 2\\Chapter 2\\Chapter 2.csproj",
+        "projectUniqueName": "C:\\Users\\Emil-laptop\\source\\repos\\Fundamentals-of-CSharp\\Chapter 2\\Chapter 2\\Chapter 2.csproj",
         "projectName": "Chapter 2",
-        "projectPath": "C:\\Users\\Emil-laptop\\source\\repos\\Chapter 2\\Chapter 2\\Chapter 2.csproj",
+        "projectPath": "C:\\Users\\Emil-laptop\\source\\repos\\Fundamentals-of-CSharp\\Chapter 2\\Chapter 2\\Chapter 2.csproj",
         "packagesPath": "C:\\Users\\Emil-laptop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emil-laptop\\source\\repos\\Chapter 2\\Chapter 2\\obj\\",
+        "outputPath": "C:\\Users\\Emil-laptop\\source\\repos\\Fundamentals-of-CSharp\\Chapter 2\\Chapter 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emil-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",

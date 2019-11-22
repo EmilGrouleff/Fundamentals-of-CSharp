@@ -4,7 +4,85 @@ namespace Chapter_2
 {
     class Exercises
     {
+        /*
 
+
+        */
+        static void Main()
+        {
+
+        }
+    }
+    class Exercises_13
+    {
+        /*
+
+
+        */
+        static void Main()
+        {
+
+        }
+    }
+
+    class Exercises_12
+    {
+        /*
+
+
+        */
+        static void Main()
+        {
+
+        }
+    }
+
+    class Exercises_11
+    {
+        /*
+
+
+        */
+        static void Main()
+        {
+
+        }
+    }
+
+    class Exercises_10
+    {
+        /*
+
+
+        */
+        static void Main()
+        {
+
+        }
+    }
+
+    class Exercises_9
+    {
+        /*
+
+
+        */
+        static void Main()
+        {
+
+        }
+    }
+
+    class Exercise_8
+    {
+        /*
+
+
+        */
+        static void Main()
+        {
+
+        }
     }
 
     class Exercise_7
@@ -18,7 +96,14 @@ namespace Chapter_2
         */
         static void Main()
         {
+            string helloString = "Hello";
+            string worldString = "World";
 
+            object container;
+
+            container = helloString + " " + worldString;
+
+            Console.WriteLine(container);
         }
     }
 
@@ -30,10 +115,29 @@ namespace Chapter_2
         */
         static void Main()
         {
+            bool isMale;
+
+            Console.WriteLine("Are you a male? y/n");
+            if (Console.ReadLine() == "y")
+            {
+                isMale = true;
+                Console.WriteLine("you are a male :D");
+                Console.WriteLine(isMale);
+            }
+            else if (Console.ReadLine() == "n")
+            {
+                isMale = false;
+                Console.WriteLine("you are a female :D");
+                Console.WriteLine(isMale);
+            }
+            else
+            {
+                Console.WriteLine("for the love of christ.. you didn't answer 'y' or 'n'");
+            }
+
 
         }
     }
-
 
     class Exercise_5
     {
@@ -44,7 +148,7 @@ namespace Chapter_2
         */
         static void Main()
         {
-
+            Console.WriteLine("exercise 5");
         }
     }
 
