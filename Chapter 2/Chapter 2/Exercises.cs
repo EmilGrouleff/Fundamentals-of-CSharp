@@ -26,6 +26,21 @@ namespace Chapter_2
         */
         static void Main()
         {
+            int a = 5;
+            int b = 10;
+
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+
+            int swap;
+
+            Console.WriteLine("Swapping numbers");
+            swap = a;
+            a = b;
+            b = swap;
+
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
 
         }
     }
@@ -42,11 +57,10 @@ namespace Chapter_2
         */
         static void Main()
         {
+            /*
+            //Should be using arrays or lists..... do this later.
             string fullName;
-            string gender = "";
-            string f = "f";
-            string m = "m";
-
+            char gender;
             int employeeNumber;
 
 
@@ -64,13 +78,14 @@ namespace Chapter_2
                 Console.WriteLine("That's not a gender");
                 gender = Console.ReadLine();
             }
-            */
+            
 
             //isn't done!
             Console.WriteLine("What is your employee number");
             employeeNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(fullName + gender + employeeNumber);
+            //Console.WriteLine(fullName + gender + employeeNumber);
+            */
         }
     }
 
