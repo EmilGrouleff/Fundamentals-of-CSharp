@@ -6,7 +6,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Ex11();
+            Ex13();
         }
 
         /*
@@ -206,7 +206,31 @@ namespace Exercises
         */
         static void Ex12()
         {
+            string firstName;
+            string lastName;
+            int age;
+            char gender;
+            int employeeNumber;
+        }
 
+        /*
+        Declare two variables of type int. Assign to them values 5 and 10 respectively. Exchange (swap) their values and print them.
+        */
+        static void Ex13()
+        {
+            int a = 5;
+            int b = 10;
+            int tempInt;
+
+            Console.WriteLine("a is: " + a);
+            Console.WriteLine("b is: " + b);
+
+            tempInt = a;
+            a = b;
+            b = tempInt;
+
+            Console.WriteLine("a is: " + a);
+            Console.WriteLine("b is: " + b);
         }
 
 

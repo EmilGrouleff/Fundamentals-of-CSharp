@@ -1,0 +1,13 @@
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\bin\Debug\netcoreapp3.1\Exercises chapter 3.exe
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\bin\Debug\netcoreapp3.1\Exercises chapter 3.deps.json
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\bin\Debug\netcoreapp3.1\Exercises chapter 3.runtimeconfig.json
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\bin\Debug\netcoreapp3.1\Exercises chapter 3.runtimeconfig.dev.json
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\bin\Debug\netcoreapp3.1\Exercises chapter 3.dll
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\bin\Debug\netcoreapp3.1\Exercises chapter 3.pdb
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.csprojAssemblyReference.cache
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.AssemblyInfoInputs.cache
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.AssemblyInfo.cs
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.csproj.CoreCompileInputs.cache
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.dll
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.pdb
+D:\Projects\Fundamentals-of-Computer-Programming-with-CSharp\Programming\Fundamentals-of-CSharp\Chapter 3 exercises\Exercises chapter 3\obj\Debug\netcoreapp3.1\Exercises chapter 3.genruntimeconfig.cache
