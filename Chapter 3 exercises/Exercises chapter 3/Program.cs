@@ -6,7 +6,7 @@ namespace Exercises_chapter_3
     {
         static void Main()
         {
-            Ex10();
+            Ex14();
         }
 
         //Write an expression that checks whether an integer is odd or even.
@@ -193,14 +193,86 @@ namespace Exercises_chapter_3
         static void Ex11()
         {
             Console.WriteLine("Write number n");
-            float n = float.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
             Console.WriteLine("Write position p");
-            float p = float.Parse(Console.ReadLine());
+            int p = int.Parse(Console.ReadLine());
 
+            int i = 1; //00000001
+            int mask = i << p; //this stuff moves the bits in i p bits to the left.
 
+            if ((n&mask) !=0)
+            {
+                Console.WriteLine("the bit in posision p is a 1");
+            }
+            else
+            {
+                Console.WriteLine("the bit in posision p is a 0");
+            }
+        }
 
+        //Write a Boolean expression that checks if the bit on position p in the integer v has the value 1. Example v = 5, p = 1-> false.
+        static void Ex12()
+        {
+            Console.WriteLine("Write number v");
+            int v = int.Parse(Console.ReadLine());
+            Console.WriteLine("Write position p");
+            int p = int.Parse(Console.ReadLine());
+
+            int i = 1; //00000001
+            int mask = i << p; //this stuff moves the bits in i p bits to the left.
+
+            Console.WriteLine((v & mask) != 0 ? true : false);
+        }
+
+        /*
+         * We are given the number n, the value v (v = 0 or 1) and the position p. 
+         * write a sequence of operations that changes the value of n, so the bit on the position p has the value of v. 
+         * Example: n=35, p=5, v=0 -> n=3. Another example: n=35, p=2, v=1 -> n=39.
+         */
+        static void Ex13()
+        {
+            Console.WriteLine("Write number n");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Write position p, which bit to change");
+            int p = int.Parse(Console.ReadLine());
+            Console.WriteLine("Write value v (1 or 0)");
+            int v = int.Parse(Console.ReadLine());
+
+            if (v==1)
+            {
+                Console.WriteLine(n = n | (1 << p)); //changes position p to 1
+            }
+            else
+            {
+                Console.WriteLine(n = n & (~(1 << p))); //takes n and changes position p in n to 0 (~1)
+            }
 
         }
 
+        //Write a program that checks if a given number n (1 < n < 100) is a prime number (i.e. it is divisible without remainder only to itself and 1).
+        static void Ex14()
+        {
+            Console.WriteLine("Write real number n, that is above one and under 100 (also it can't be 4.. please..)");
+            int n = int.Parse(Console.ReadLine());
+            bool flag = true;
+
+            for (int i = 2; i < n/2; i++)
+            {
+                if (n%i==0)
+                {
+                    flag = false;
+                }
+            }
+            if (flag)
+            {
+                Console.WriteLine("it is a prime");
+            }
+            else
+            {
+                Console.WriteLine("it is not a prime");
+
+            }
+            //can't be 4 for some reason. it is very confusing
+        }
     }
 }
