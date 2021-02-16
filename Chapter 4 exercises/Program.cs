@@ -6,7 +6,7 @@ namespace Chapter_4_exercises
     {
         static void Main()
         {
-            Ex5();
+            Ex11();
         }
 
         //Write a program that reads from the console three numbers of type int and prints their sum.
@@ -113,7 +113,133 @@ namespace Chapter_4_exercises
         //Write a program that reads two numbers from the console and prints the greater of them. Solve the problem without using conditional statements.
         static void Ex6()
         {
+            Console.WriteLine("input a number a");
+            float a = float.Parse(Console.ReadLine());
+            Console.WriteLine("input a number b");
+            float b = float.Parse(Console.ReadLine());
 
+            Console.WriteLine("The biggest number is: " + Math.Max(a, b));
+            Console.WriteLine("The smallest number is: " + Math.Min(a, b));
+        }
+
+        //Write a program that reads five integer numbers and prints their sum. If an invalid number is entered the program should prompt the user to enter another number.
+        static void Ex7()
+        {
+            int temp;
+            int startNumber = 0;
+
+            for (int i = 0; i < 5;)
+            {
+                Console.WriteLine("Input a real number");
+                if (int.TryParse(Console.ReadLine(), out temp)) //Bool to see if it can read the line and parse it as an int
+                {
+                    int currNumber = startNumber + temp;
+                    Console.WriteLine("The sum of the numbers you have written is: " + currNumber);
+                    startNumber = currNumber;
+                    i++;
+                }
+                else
+                {
+                    Console.WriteLine("That wasn't a real number, try again");
+                }
+            }
+        }
+
+        //Write a program that reads five numbers from the console and prints the greatest of them.
+        static void Ex8()
+        {
+            int temp;
+            int highestNumber;
+            int currNumber = 0; //can never go into minus because of this, should do something different for the first number.
+
+            for (int i = 0; i < 4;)
+            {
+                Console.WriteLine("Input a real number");
+                if (int.TryParse(Console.ReadLine(), out temp)) //Bool to see if it can read the line and parse it as an int
+                {
+                    highestNumber = Math.Max(temp, currNumber);
+                    Console.WriteLine("The current greatest number is: " + highestNumber);
+                    currNumber = highestNumber;
+                    i++;
+                }
+                else
+                {
+                    Console.WriteLine("That wasn't a real number, try again");
+                }
+            }
+        }
+
+        //Write a program that reads an integer number n from the console. After that reads n numbers from the console and prints their sum.
+        static void Ex9()
+        {
+            int n;
+            int temp;
+            int startNumber = 0;
+
+            Console.WriteLine("Write a real number for the amount of numbers you want the sum off");
+            if (int.TryParse(Console.ReadLine(), out n))
+            {
+                for (int i = 0; i < n;) //for loop taken from exercise 7, but with i < n.
+                {
+                    Console.WriteLine("Input a real number");
+                    if (int.TryParse(Console.ReadLine(), out temp)) //Bool to see if it can read the line and parse it as an int
+                    {
+                        int currNumber = startNumber + temp;
+                        Console.WriteLine("The sum of the numbers you have written is: " + currNumber);
+                        startNumber = currNumber;
+                        i++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("That wasn't a real number, try again");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("That wasn't a real number, try again");
+            }
+        }
+
+        //Write a program that reads an integer number n from the console and prints all numbers in the range [1…n], each on a separate line.
+        static void Ex10()
+        {
+            int n;
+
+            Console.WriteLine("Write a real number you want all the number up to written on lines.");
+            if (int.TryParse(Console.ReadLine(), out n))
+            {
+                for (int i = 0; i <= n; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                Console.WriteLine("That wasn't a real number, try again");
+            }
+        }
+
+        //Write a program that prints on the console the first 100 numbers in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, …
+        static void Ex11()
+        {
+
+            ulong lastNumber = 0;
+            ulong currNumber = 1;
+
+            Console.WriteLine("The 0 number is: {0}", lastNumber);
+            Console.WriteLine("The 1 number is: {0}", currNumber);
+
+            for (int i = 2; i <= 100; i++)
+            {
+                ulong newNumber = lastNumber + currNumber;
+                Console.WriteLine("The {0} number is: {1}",i , newNumber);
+                lastNumber = currNumber;
+                currNumber = newNumber;
+            }
+
+            //!!!!!NOTE!!!!!
+            //numbers up to 93 is correct, 94-100 are incorrect, cuz ulong not big enough..
         }
 
     }
