@@ -6,7 +6,7 @@ namespace Chapter_4_exercises
     {
         static void Main()
         {
-            Ex11();
+            Ex12();
         }
 
         //Write a program that reads from the console three numbers of type int and prints their sum.
@@ -242,5 +242,33 @@ namespace Chapter_4_exercises
             //numbers up to 93 is correct, 94-100 are incorrect, cuz ulong not big enough..
         }
 
+        //Write a program that calculates the sum (with precision of 0.001) of the following sequence: 1 + 1/2 - 1/3 + 1/4 - 1/5 + …
+        static void Ex12()
+        {
+            double currSum = 1;
+            double oldSum = 0;
+            double divider = 2;
+            bool wasAddition = false;
+
+            while (Math.Abs(currSum - oldSum) > 0.001)
+            {
+                oldSum = currSum;
+                if (wasAddition)
+                {
+                    currSum =currSum - (1 / divider);
+                    divider++;
+                    wasAddition = false;
+                }
+                else
+                {
+                    currSum = currSum+(1 / divider);
+                    divider++;
+                    wasAddition = true;
+                }
+                Console.WriteLine(currSum);
+            }
+            //pretty fun exercise.. look at it gooooo numbers go brrrrrrrrrrrr
+
+        }
     }
 }
